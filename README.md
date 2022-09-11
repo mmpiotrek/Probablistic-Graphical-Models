@@ -1,4 +1,4 @@
-# Projekt
+# Projekt przechodnie
 Projekt zaliczeniowy "Przechodnie" w ramach przedmiotu Sztuczna Inteligencja w Robotyce opiera się na grafie czynników. Projekt polega na śledzeniu, a dokładniej porównywaniu osób z następujących po sobie zdjęć. Każda osoba, która po raz pierwszy pojawiła się na monitoringu reprezentowana jest przez wartość -1. Osoby które już wcześniej zostały uchwycone przyjmują unikatowe stałe wartości równe lub większe od 0.
 
 Na początku wczytywane są zdjęcia z monitoringu, z których następnie wycinane są osoby (przechodnie). Informacje o tym gdzie znajdują się osoby są wczytywane z pliku bboxes.txt. Następnie ze zdjęć przechodniów generowane są:
