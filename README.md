@@ -5,6 +5,7 @@ Na początku wczytywane są zdjęcia z monitoringu, z których następnie wycina
 - histogram w skali szarości,
 - histogram odcienia światła (hue),
 - histogram nasycenia kolorów (saturation),
+- histogram wartości (value),
 - stosunek szerokości do wysokości osoby.
 
 Uzyskane dane porównywane są z danymi osób z poprzedniego zdjęcia. W ten sposób powstaje macierz podobieństwa (hist_avarage o wymiarach 1x(liczba osób na zdjęciu + 1)). Macierz ta określa na ile osoby z dwóch kolejnych zdjęć są do siebie podobne. Jeżeli podobieństwo wynosi poniżej 65% osoba jest uznawana za nową. Każdy Bounding Box (czyli fragment zdjęcia z przechodniem) tworzy nowy węzeł (ang. node) w grafie czynników. Macierz podobieństwa dodawana jest jako współczynnik w grafie i łączy się z tylko z odpowiadającym jej węzłem.
